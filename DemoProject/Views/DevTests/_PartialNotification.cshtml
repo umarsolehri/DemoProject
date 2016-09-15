@@ -1,0 +1,11 @@
+﻿@model IEnumerable<DemoProjectBOL.Models.DevTest>
+
+<div class="noti-content" id="try">
+    <div class="noti-top-arrow"></div>
+    <ul id="notiContent">
+        @foreach (var item in Model)
+        {
+            <li>New Campaign @item.CampaignName on date @item.Date.ToString("d") added</li>
+        }
+    </ul>
+</div>
